@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as THREE from 'three';
-import axios from 'axios'; // Volvemos a incluir axios para obtener los cometas
+import axios from 'axios'; // Para obtener los cometas
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import './App.css';
 
@@ -97,7 +97,10 @@ const createOrbitLine = (a, e, I, ω, Ω, L, distance, T) => {
 const createPlanet = (name, size, distance, texturePath, orbitalParams, T) => {
   const geometry = new THREE.SphereGeometry(size * 2.5, 32, 32);
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load(`./${texturePath}`);
+
+  // Cargamos la textura de los planetas desde el directorio público
+  const texture = textureLoader.load(`${process.env.PUBLIC_URL}/${texturePath}`);
+
   const material = new THREE.MeshPhongMaterial({ map: texture, shininess: 100 });
   const planet = new THREE.Mesh(geometry, material);
 
@@ -181,7 +184,7 @@ const App = () => {
     const planetsArrayTemp = [];
 
     const textureLoader = new THREE.TextureLoader();
-    const sunTexture = textureLoader.load('./texturasol.jpg');
+    const sunTexture = textureLoader.load(`${process.env.PUBLIC_URL}/texturasol.jpg`);
     const sunGeometry = new THREE.SphereGeometry(15, 32, 32);
     const sunMaterial = new THREE.MeshPhongMaterial({ map: sunTexture, shininess: 150 });
     const sun = new THREE.Mesh(sunGeometry, sunMaterial);
@@ -256,7 +259,6 @@ const App = () => {
         }
       }
     };
-    
 
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('click', onMouseClick);
@@ -334,6 +336,7 @@ const App = () => {
 };
 
 export default App;
+
 
 
 
