@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/DamianMillan/Spaceapps.git/static/css/main.c66fc559.chunk.css",
+    "main.js": "/DamianMillan/Spaceapps.git/static/js/main.5441f7f3.chunk.js",
+    "main.js.map": "/DamianMillan/Spaceapps.git/static/js/main.5441f7f3.chunk.js.map",
+    "runtime-main.js": "/DamianMillan/Spaceapps.git/static/js/runtime-main.eeed432b.js",
+    "runtime-main.js.map": "/DamianMillan/Spaceapps.git/static/js/runtime-main.eeed432b.js.map",
+    "static/js/2.1934cc0b.chunk.js": "/DamianMillan/Spaceapps.git/static/js/2.1934cc0b.chunk.js",
+    "static/js/2.1934cc0b.chunk.js.map": "/DamianMillan/Spaceapps.git/static/js/2.1934cc0b.chunk.js.map",
+    "static/js/3.f893e0ed.chunk.js": "/DamianMillan/Spaceapps.git/static/js/3.f893e0ed.chunk.js",
+    "static/js/3.f893e0ed.chunk.js.map": "/DamianMillan/Spaceapps.git/static/js/3.f893e0ed.chunk.js.map",
+    "index.html": "/DamianMillan/Spaceapps.git/index.html",
+    "precache-manifest.c5b5b3c20ca9de452bd9bc078b1ae181.js": "/DamianMillan/Spaceapps.git/precache-manifest.c5b5b3c20ca9de452bd9bc078b1ae181.js",
+    "service-worker.js": "/DamianMillan/Spaceapps.git/service-worker.js",
+    "static/css/main.c66fc559.chunk.css.map": "/DamianMillan/Spaceapps.git/static/css/main.c66fc559.chunk.css.map",
+    "static/js/2.1934cc0b.chunk.js.LICENSE.txt": "/DamianMillan/Spaceapps.git/static/js/2.1934cc0b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eeed432b.js",
+    "static/js/2.1934cc0b.chunk.js",
+    "static/css/main.c66fc559.chunk.css",
+    "static/js/main.5441f7f3.chunk.js"
+  ]
+}
